@@ -1,0 +1,260 @@
+*{
+  text-decoration: none;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  /* background-image: url('./images/iot1.png');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* color: white; */
+  background-color: #132F56 !important;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  color: #fff !important;
+  
+}
+p,h3{
+  margin: 0px;
+  padding: 0px;
+}
+ul,li{
+  list-style: none;
+  margin: 0px 30px;
+}
+
+.NavBarContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aliceblue;
+  height: 60px;
+}
+
+.NavBarList{
+  display: flex;
+  justify-content: space-between;
+}
+.NavItemSelected{
+  font-weight: bold;
+  color: blue;
+
+}
+.NavItemUnselected{
+
+color: black;
+}
+
+.ProfileContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.CircleAvatar{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: #67859f solid 2px;
+
+}
+
+.ProfileImage{
+  width: 100%;
+  height: 100%;
+}
+
+
+.Container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  height: 80vh;
+  width: 94vw;
+  
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color:white;
+}
+
+.login-heading {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  width: 500px;
+  padding: 30px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+  /* width: 100px; */
+}
+
+input {
+  width: 200px;
+  height: 30px;
+}
+
+.submit-btn {
+  cursor: pointer;
+  width: 80px; /* Increase the width */
+  height: 40px; /* Increase the height */
+  font-size: 16px; /* Increase the font size */
+  border-radius: 10px;
+  background-color: #67859f;
+  color: white;
+  margin-left: 100px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a box shadow for pressed effect */
+
+  
+}
+
+.submit-btn:hover {
+  /* background-color: gray; */
+  color: white;
+
+}
+.submit-btn:active {
+  transform: translateY(1px); /* Move the button down slightly when pressed */
+}
+
+
+.loginButtonStyle{
+   padding: 10px 20px;
+  background-color: '#fff';
+  color: #132f56 !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+
+}
+
+.imgStyle{
+    width: 30vw !important;
+    height: 50vh !important;
+    /* border: green solid 5px; */
+   
+  };
+
+.AboutUs{
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.ViewReportContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+
+}
+.ViewReportDataContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  
+  
+}
+
+.DataContainer{
+  display:flex;
+  align-items: center;
+  align-content: center;
+  width: 250px;
+  height: 150px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  color: black;
+  margin-top: 10px;
+
+}
+.SensorData{
+  
+  margin: auto;
+  font-weight: bolder;
+  
+}
+.SensorDataHeaderMain{
+  color: aliceblue;
+  font-weight: bolder;
+}
+.SensorDataHeader{
+  color: aliceblue;
+}
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #00cc66 transparent #00cc66 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+.input-wrapper {
+  margin-left: 40px; /* Adjust the value as needed */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
