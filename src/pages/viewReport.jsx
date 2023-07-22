@@ -1,54 +1,54 @@
-import { useEffect, useState } from "react";
-import {
-  collection,
-  getDocs,
-  query,
-  where,
-  orderBy,
-  limit,
-  startAfter,
-} from "firebase/firestore";
-import { db } from "../firebase.config";
+import {  useState } from "react";
+// import {
+//   // collection,
+//   // getDocs,
+//   // query,
+//   // where,
+//   // orderBy,
+//   // limit,
+//   // startAfter,
+// } from "firebase/firestore";
+// import { db } from "../firebase.config";
 import Spinner from "../components/Spinner";
 import Chart from "../components/charts";
 import Card from "../components/CustomPanel";
-import { Animation, Avatar, AvatarGroup } from "rsuite";
+import { Animation} from "rsuite";
 import NavBar from "../components/navBar";
 
 function ViewReport() {
-  const [datas, setDatas] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [reload, setReload] = useState(false);
+  // const [datas, setDatas] = useState(null);
+  // const [loading, setLoading] = useState(true);
+  // const [reload, setReload] = useState(false);
   const [show, setShow] = useState('image')
 
-  useEffect(() => {
-    fetchDatas();
-  }, [reload]);
+  // useEffect(() => {
+  //   fetchDatas();
+  // }, [reload]);
 
-  const fetchDatas = async () => {
-    try {
-      // get reference
-      const datasRef = collection(db, "listings");
-      // create a querry
-      const q = query(datasRef, orderBy("timestamp", "desc"));
-      //Execute querry
-      const querySnap = await getDocs(q);
-      let listings = [];
-      querySnap.forEach((doc) => {
-        console.log(doc.data());
-        return listings.push({
-          id: doc.id,
-          data: doc.data(),
-        });
-      });
-      console.log(datas);
+  // const fetchDatas = async () => {
+  //   try {
+  //     // get reference
+  //     const datasRef = collection(db, "listings");
+  //     // create a querry
+  //     const q = query(datasRef, orderBy("timestamp", "desc"));
+  //     //Execute querry
+  //     const querySnap = await getDocs(q);
+  //     let listings = [];
+  //     querySnap.forEach((doc) => {
+  //       console.log(doc.data());
+  //       return listings.push({
+  //         id: doc.id,
+  //         data: doc.data(),
+  //       });
+  //     });
+  //     console.log(datas);
       setDatas(listings);
-      setLoading(false);
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    }
-  };
+  //     setLoading(false);
+  //   } catch (error) {
+  //     console.log(error);
+  //     setLoading(false);
+  //   }
+  // };
 
   //reloads data after every 3000millisecnd
   // setInterval(() => {

@@ -10,12 +10,12 @@ const NavBar = () => {
 
 
   const pathName = (route) => {
-    if (route == location.pathname) {
+    if (route === location.pathname) {
       return true;
     }
   };
 
-  const user = true;
+  // const user = true;
   const auth = getAuth();
  const handleLogout = ()=>{
     auth.signOut();
