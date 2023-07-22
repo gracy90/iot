@@ -42,7 +42,7 @@ function ViewReport() {
   //       });
   //     });
   //     console.log(datas);
-      setDatas(listings);
+      // setDatas(listings);
   //     setLoading(false);
   //   } catch (error) {
   //     console.log(error);
@@ -65,9 +65,9 @@ function ViewReport() {
     <NavBar />
     <div className="ViewReportContainer">
       <p className="SensorDataHeaderMain">Report Overview</p>
-      {loading ? (
+      {/* {loading ? ( */}
         <Spinner></Spinner>
-        ) : (
+        {/* ) : ( */}
           <div className="ViewReportDataContainer">
          
           {/* <div>
@@ -113,7 +113,7 @@ function ViewReport() {
         </Animation.Bounce>
          
         </div>
-      )}
+      {/* )} */}
     </div>
       </>
   );
