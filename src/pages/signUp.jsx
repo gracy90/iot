@@ -1,4 +1,4 @@
-import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { getAuth, updateProfile } from "firebase/auth";
 // import { db } from "../firebase.config";
 import { useNavigate, Link } from "react-router-dom";
 import React, { useState } from "react";
