@@ -1,7 +1,7 @@
 import React from 'react';
 import iot1 from '../images/iot1.png'; // Import the PNG image
 import "../index.css"
-import { useNavigate, useNavigation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {getAuth} from 'firebase/auth'
 import NavBar from '../components/navBar';
 
